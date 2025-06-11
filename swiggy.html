@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+              background-color: orangered;
+              text-align: left;
+             
+              
+        }
+       
+        
+        #p{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 70px 80px 80px 80px 100px 100px 100px 100px;
+            grid-gap:5px;
+            grid-template-areas: "nav nav nav nav" 
+            "section section section section" "section section section section" "main main main main" "main main main main" "footer footer footer footer";
+            
+        }
+    
+        nav {
+            grid-area: nav;
+            display: flex;
+            justify-content:space-around ;
+           
+            
+        }
+        
+        section{
+            grid-area: section;
+            text-align: center;
+            line-height: 6px;
+            
+        }
+        
+        main{
+           grid-area: main;
+          display: flex;
+           background-color: white;
+           justify-content:space-around ;
+           border: 200px;
+           animation: mymove 6s;
+           
+           
+        }
+        @keyframes mymove{
+            from{opacity: 0;}
+            to{opacity: 1;}
+            
+        }
+        
+    footer{
+        grid-area: footer;
+        
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="p">
+        <nav>
+            <img src="C:\Users\simra\OneDrive\Documents\FSD\Folder1.html\Folder2.html\Screenshot 2025-03-04 154111.png" 
+            width="150px" height="100px">
+            <h4 style="color: white;">swiggy corporate</h4>
+            <h4 style="color: white;">parter with us</h4>
+            <button style="border-radius: 5px; width: 90px; height: 30px; color: white; background-color:
+             orangered; border-color: white; ">Get the app</button>
+            <button style="border-radius: 5px; width: 90px; height: 30px; color: white; background-color: black;">sign in</button>
+        
+        </nav>
+        <section>
+            <h1 style="color: white;">Order food & groceries.Discover</h1>
+            <h1 style="color: white;">best restaurants,Swiggy it!</h1>
+            <label>
+            <input type="text" placeholder="Enter your delivery location" 
+            style="border-radius: 5px; width: 300px; height: 30px;"></label>
+            <label>
+                <input type="text" placeholder=" Search for restaurants"
+                 style="border-radius: 
+                5px;  width: 300px; height: 30px;" ></label>
+        </section>
+        <main>
+           
+            <div id="i1">
+                 <img src="C:\Users\simra\OneDrive\Documents\FSD\Folder1.html\Folder2.html\biryani.jpg" 
+                  width="100px" height="100px" style="padding-top: 30px;">
+                <figcaption style="text-align: center;">biryani</figcaption>
+            </div> 
+            
+            <div id="i2">
+                <img src="C:\Users\simra\OneDrive\Documents\FSD\Folder1.html\Folder2.html\south.jpg"
+                 width="100px" height="100px" style="padding-top: 30px;">
+                <figcaption style="text-align: center;">South india</figcaption>
+            </div>
+            <div id="i3">
+                <img src="C:\Users\simra\OneDrive\Documents\FSD\Folder1.html\Folder2.html\north.jpg" 
+                width="100px" height="100px" style="padding-top: 30px;">
+                <figcaption style="text-align: center;">North india</figcaption>
+            </div>
+            <div id="i4">
+                <img src="C:\Users\simra\OneDrive\Documents\FSD\Folder1.html\Folder2.html\cake.jpg"
+                 width="100px" height="100px" style="padding-top: 30px;">
+                <figcaption style="text-align: center;">Cake</figcaption>
+            </div>
+            <div id="i5">
+                <img src="C:\Users\simra\OneDrive\Documents\FSD\Folder1.html\Folder2.html\pizza.jpg" 
+                width="100px" height="100px" style="padding-top: 30px;">
+                <figcaption style="text-align: center;">Pizza</figcaption>
+            </div>
+        
+            
+        </main>
+        <footer>
+            <img src="C:\Users\simra\OneDrive\Documents\FSD\Folder1.html\Folder2.html\Screenshot 2025-03-04 160818.png" 
+            width="1500px" height="500px">
+
+        </footer>
+    
+</body>
+</html>
